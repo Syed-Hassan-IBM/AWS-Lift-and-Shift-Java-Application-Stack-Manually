@@ -25,12 +25,12 @@ This project involves the deployment of a Java application on Amazon Web Service
 
 # Deployment Process:
 1. Provision EC2 instances for db01, rmq01, mc01, and app01.
-2. Install and configure MySQL, RabbitMQ, Memcached, and Java runtime environment on respective instances.
-3. Set up security groups to restrict access to each component.
-4. Configure ALB to distribute incoming requests to the app01 instance.
+2. Install and configure MySQL, RabbitMQ, Memcached, and Java runtime environment on respective instances Using scripts in userdata section 
+3. Set up security groups to restrict access to each component with ports allowed in inbound Ttraffic mentioned in application.property file under src/
+4. Configure ALB to distribute incoming requests to the app01 instance. 
 5. Establish private hosted zones for secure communication.
 6. Deploy the Java application code to app01.
-7. Update the GitHub README.md file with deployment instructions, component details, and configuration specifics.
+
 
 
 This project aims to provide a comprehensive guide for deploying a Java application on AWS infrastructure, integrating essential components for efficient operation and scalability.
